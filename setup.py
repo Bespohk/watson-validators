@@ -64,7 +64,7 @@ with open(os.path.join(path, 'requirements.txt')) as f:
 setup(
     name='watson-validators',
     version=watson.validators.__version__,
-    url='http://github.com/bespohk/watson-validators',
+    url='http://github.com/watsonpy/watson-validators',
     description='Validate and verify arbitrary values.',
     long_description=readme,
 

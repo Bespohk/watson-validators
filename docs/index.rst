@@ -38,10 +38,10 @@ Table of Contents
 
 .. include:: toc.rst.inc
 
-.. |Build Status| image:: https://api.travis-ci.org/Bespohk/watson-validators.png?branch=master
-   :target: https://travis-ci.org/Bespohk/watson-validators
-.. |Coverage Status| image:: https://coveralls.io/repos/bespohk/watson-validators/badge.png
-   :target: https://coveralls.io/r/bespohk/watson-validators
+.. |Build Status| image:: https://api.travis-ci.org/watsonpy/watson-validators.png?branch=master
+   :target: https://travis-ci.org/watsonpy/watson-validators
+.. |Coverage Status| image:: https://coveralls.io/repos/watsonpy/watson-validators/badge.png
+   :target: https://coveralls.io/r/watsonpy/watson-validators
 .. |Version| image:: https://pypip.in/v/watson-validators/badge.png
    :target: https://pypi.python.org/pypi/watson-validators/
 .. |Downloads| image:: https://pypip.in/d/watson-validators/badge.png
