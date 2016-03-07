@@ -23,9 +23,9 @@ Dependencies
    :target: https://travis-ci.org/watsonpy/watson-validators
 .. |Coverage Status| image:: https://coveralls.io/repos/watsonpy/watson-validators/badge.png
    :target: https://coveralls.io/r/watsonpy/watson-validators
-.. |Version| image:: https://pypip.in/v/watson-validators/badge.png
+.. |Version| image:: http://badge.kloud51.com/pypi/v/watson-validators.png
    :target: https://pypi.python.org/pypi/watson-validators/
-.. |Downloads| image:: https://pypip.in/d/watson-validators/badge.png
+.. |Downloads| image:: http://badge.kloud51.com/pypi/d/watson-validators.png
    :target: https://pypi.python.org/pypi/watson-validators/
-.. |Licence| image:: https://pypip.in/license/watson-validators/badge.png
+.. |Licence| image:: http://badge.kloud51.com/pypi/license/watson-validators.png
    :target: https://pypi.python.org/pypi/watson-validators/
