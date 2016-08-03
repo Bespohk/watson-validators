@@ -9,7 +9,7 @@ Docs <http://watson-validators.readthedocs.org/>`__.
 Build Status
 ^^^^^^^^^^^^
 
-|Build Status| |Coverage Status| |Version| |Downloads| |Licence|
+|Build Status| |Coverage Status| |Version|
 
 Installation
 ------------
@@ -19,9 +19,9 @@ Installation
 Dependencies
 ------------
 
-.. |Build Status| image:: https://api.travis-ci.org/watsonpy/watson-validators.png?branch=master
+.. |Build Status| image:: https://img.shields.io/travis/watsonpy/watson-validators.svg?maxAge=2592000
    :target: https://travis-ci.org/watsonpy/watson-validators
-.. |Coverage Status| image:: https://coveralls.io/repos/watsonpy/watson-validators/badge.png
+.. |Coverage Status| image:: https://img.shields.io/coveralls/watsonpy/watson-validators.svg?maxAge=2592000
    :target: https://coveralls.io/r/watsonpy/watson-validators
 .. |Version| image:: https://img.shields.io/pypi/v/watson-validators.svg?maxAge=2592000
    :target: https://pypi.python.org/pypi/watson-validators/
