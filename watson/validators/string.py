@@ -33,7 +33,7 @@ class Length(abc.Validator):
         self.min = int(min)
         self.max = int(max)
 
-    def __call__(self, value):
+    def __call__(self, value, **kwargs):
         valid = True
         message = None
         if not value:
@@ -71,7 +71,7 @@ class Required(abc.Validator):
     def __init__(self, message='Value is required'):
         self.message = message
 
-    def __call__(self, value):
+    def __call__(self, value, **kwargs):
         if not value:
             raise ValueError(self.message.format(value=value))
         return True
@@ -97,7 +97,7 @@ class RegEx(abc.Validator):
         self.regex = regex
         self.message = message
 
-    def __call__(self, value):
+    def __call__(self, value, **kwargs):
         if not self.regex.match(value):
             raise ValueError(
                 self.message.format(
@@ -122,6 +122,6 @@ class Csrf(abc.Validator):
         self.token = token
         self.message = message
 
-    def __call__(self, value):
+    def __call__(self, value, **kwargs):
         if value != self.token:
             raise ValueError(self.message.format(token=value))

@@ -25,7 +25,7 @@ class Range(abc.Validator):
         self.min = min
         self.max = max
 
-    def __call__(self, value):
+    def __call__(self, value, **kwargs):
         if float(value) > self.max or float(value) < self.min:
             raise ValueError(
                 self.message.format(

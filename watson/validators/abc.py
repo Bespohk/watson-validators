@@ -11,5 +11,5 @@ class Validator(metaclass=abc.ABCMeta):
     message = None
 
     @abc.abstractmethod
-    def __call__(self, value):
+    def __call__(self, value, **kwargs):
         raise NotImplementedError  # pragma: no cover
