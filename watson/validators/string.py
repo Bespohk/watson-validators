@@ -98,7 +98,7 @@ class RegEx(abc.Validator):
         self.message = message
 
     def __call__(self, value, **kwargs):
-        if not self.regex.match(value):
+        if not value or value and not self.regex.match(value):
             raise ValueError(
                 self.message.format(
                     value=value,
