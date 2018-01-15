@@ -36,13 +36,13 @@ class Length(abc.Validator):
     def __call__(self, value, **kwargs):
         valid = True
         message = None
-        if not value:
+        if not value and self.min >= 0:
             raise ValueError(self.message.format(
                 min=self.min,
                 max=self.max,
                 value=value,
                 length=0))
-        str_len = len(value)
+        str_len = len(value) if value else 0
         if (self.min > -1 and str_len < self.min) or (self.max > -1 and str_len > self.max):
             valid = False
             message = self.message.format(
@@ -98,7 +98,7 @@ class RegEx(abc.Validator):
         self.message = message
 
     def __call__(self, value, **kwargs):
-        if not value or value and not self.regex.match(value):
+        if value and not self.regex.match(value):
             raise ValueError(
                 self.message.format(
                     value=value,

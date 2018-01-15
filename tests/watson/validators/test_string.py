@@ -23,6 +23,10 @@ class TestLength(object):
         validator = Length(min=1)
         assert validator('Test')
 
+    def test_blank_requirement(self):
+        validator = Length()
+        assert validator('')
+
     def test_doesnt_meet_max_requirement(self):
         with raises(ValueError):
             validator = Length(max=10)
