@@ -7,5 +7,5 @@ try:
     from watson.validators.string import Length, Required, RegEx, Csrf
 
     __all__ = ['Range', 'Length', 'Required', 'RegEx', 'Csrf']
-except:  # pragma: no cover
+except:  # noqa, pragma: no cover
     pass  # pragma: no cover
